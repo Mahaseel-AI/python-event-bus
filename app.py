@@ -72,6 +72,7 @@ def subscribe():
             ) as sender:
                 # Need to structure better, this is just a proof of concept kept as small as possible
                 for message in receiver:
+                    print("Recieved message: " + str(message))
                     # In production, this will be the place where we will call the model and do operations
                     # Should recieve JSON obj. for now just print it.
                     # Check if message is a JSON object
